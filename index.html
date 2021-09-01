@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qwerty</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="//db.onlinewebfonts.com/c/07a38bbad54db72a40b406bed1c72f53?family=Gotham+Pro" rel="stylesheet"
+    type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="icon" href="./img/icon/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="body">
+  <div class="full-body-image">
+    <h1>
+      <div class="mobile-flex">
+        <a id="burger" href="#menu"><i class="fa fa-bars"></i></a>
+        <img src="img/logo.svg" alt="">
+      </div>
+    </h1>
+    <div class="popover" id="menu">
+      <div class='content'>
+        <a href="#" class="close"></a>
+        <div class='nav-mobile'>
+          <ul class='nav_list'>
+            <div class='nav_list_item'>
+              <li data-tab-target="#Начало"><a href="#header">Начало</a></li>
+            </div>
+            <div class='nav_list_item'>
+              <li data-tab-target="#Услуги"><a href="#services">Услуги</a></li>
+            </div>
+            <div class='nav_list_item'>
+              <li data-tab-target="#Кейсы"><a href="#case">Кейсы</a></li>
+            </div>
+            <div class='nav_list_item'>
+              <li data-tab-target="#team"><a href="#team">Команда</a></li>
+            </div>
+            <div class='nav_list_item'>
+              <li><a href="#partners">Партнеры</a></li>
+            </div>
+            <div class='nav_list_item'>
+              <li><a href="#contacts">Контакты</a></li>
+            </div>
+            <div class='nav_list_item nav-flex'>
+              <li> <a href="#"><img src="img/facebook.svg" alt="" /></a></li>
+              <li> <a href="#"><img src="img/twitter.svg" alt="" /></a></a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-mobile">
+      <div id="stars"></div>
+    </div>
+    <section class="navbar">
+      <nav class="nav scroll-spy">
+        <ul class="nav__list">
+          <a href="#header" class="nav__item active">Начало</a>
+          <a href="#services" class="nav__item">Услуги</a>
+          <a href="#case" class="nav__item">Кейсы</a>
+          <a href="#team" class="nav__item">Команда</a>
+          <a href="#partners" class="nav__item">Партнеры</a>
+          <a href="#contacts" class="nav__item">Контакты</a>
+        </ul>
+      </nav>
+    </section>
+    <section class="header" id="header">
+      <div class="container">
+        <div class="header-logo">
+          <img src="./img/logo.svg" alt="" />
+        </div>
+        <div class="header-stripes">
+          <img src="./img/stripes.svg" alt="" />
+        </div>
+        <div class="header-content">
+          <p class="header-content__title">
+            Дизайн и разработка сайтов, мобильных <br />
+            приложений, интернет-магазинов и <br />
+            сложных интернет-проектов.
+          </p>
+          <div class="header-call">
+            <a class="header-call__info" href="#">Заказать звонок</a>ˇ
+            <div class="call-flex">
+              <img class="header-call__image" src="./img/call-icon.svg" alt="" />
+              <a class="header-call__item" href="#">+ 998 93 573 62 15</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services tab-content" id="services">
+      <div class="container">
+        <div class="services-title">
+          <h2 class="services-title-name">
+            Создаём <br />
+            сайты
+          </h2>
+          <p class="services-title-name-desc">
+            Которые усиливают <br />
+            бренд и приводят клиентов
+          </p>
+        </div>
+        <div class="services-stripes">
+          <img class="services-stripes_first" src="img/stripes.svg" alt="" />
+          <img class="services-stripes_second" src="img/services.png" alt="" />
+        </div>
+        <!-- Swiper -->
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-item">
+                  <div class="card-image">
+                    <img class="card-item-image" src="img/services-image.svg" alt="" />
+                    <div class="card-item-image-sale">
+                      <p>Хит продаж</p>
+                    </div>
+                  </div>
+                  <p class="card-item-image-text">Одностраничный сайт</p>
+                  <h2 class="card-item-image-text-title">Landing-page</h2>
+                  <p class="card-item-image-text-title-desc">
+                    Лендинг формируется таким образом, чтобы коротко и доходчиво изложить суть предложения, вызвать
+                    заинтересованность, убедить клиента в том, что это то чего он желает.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-item">
+                  <div class="card-image">
+                    <div class="card-image">
+                      <img class="card-item-image" src="img/services-image.svg" alt="" />
+                      <div class="card-item-image-sale">
+                        <p>Хит продаж</p>
+                      </div>
+                    </div>
+                    <div class="card-item-image-sale">
+                      <p>Хит продаж</p>
+                    </div>
+                  </div>
+                  <p class="card-item-image-text">Одностраничный сайт</p>
+                  <h2 class="card-item-image-text-title">Корпоративные сайты</h2>
+                  <p class="card-item-image-text-title-desc">
+                    Лендинг формируется таким образом, чтобы коротко и
+                    доходчиво изложить суть предложения, вызвать
+                    заинтересованность,убедить клиента в том, что это то чего
+                    он желает.
+                  </p>
+                  <div class="popular">
+                    <img src="img/popular.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-item">
+                  <div class="card-image">
+                    <img class="card-item-image" src="img/services-image.svg" alt="" />
+                    <div class="card-item-image-sale">
+                      <p>Хит продаж</p>
+                    </div>
+                  </div>
+                  <p class="card-item-image-text">Одностраничный сайт</p>
+                  <h2 class="card-item-image-text-title">Разработка интернет-магазинов</h2>
+                  <p class="card-item-image-text-title-desc">
+                    Лендинг формируется таким образом, чтобы коротко и
+                    доходчиво изложить суть предложения, вызвать
+                    заинтересованность,убедить клиента в том, что это то чего
+                    он желает.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-item">
+                  <div class="card-image">
+                    <img class="card-item-image" src="img/services-image.svg" alt="" />
+                    <div class="card-item-image-sale">
+                      <p>Хит продаж</p>
+                    </div>
+                  </div>
+                  <p class="card-item-image-text">Одностраничный сайт</p>
+                  <h2 class="card-item-image-text-title">Продвижение SMM (Facebook,Instagram)</h2>
+                  <p class="card-item-image-text-title-desc">
+                    Лендинг формируется таким образом, чтобы коротко и
+                    доходчиво изложить суть предложения, вызвать
+                    заинтересованность,убедить клиента в том, что это то чего
+                    он желает.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-item">
+                  <div class="card-image">
+                    <img class="card-item-image" src="img/services-image.svg" alt="" />
+                    <div class="card-item-image-sale">
+                      <p>Хит продаж</p>
+                    </div>
+                  </div>
+                  <p class="card-item-image-text">Одностраничный сайт</p>
+                  <h2 class="card-item-image-text-title">Уникальная Веб-Разработка</h2>
+                  <p class="card-item-image-text-title-desc">
+                    Лендинг формируется таким образом, чтобы коротко и
+                    доходчиво изложить суть предложения, вызвать
+                    заинтересованность,убедить клиента в том, что это то чего
+                    он желает.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-item">
+                  <div class="card-image">
+                    <img class="card-item-image" src="img/services-image.svg" alt="" />
+                    <div class="card-item-image-sale">
+                      <p>Хит продаж</p>
+                    </div>
+                  </div>
+                  <p class="card-item-image-text">Одностраничный сайт</p>
+                  <h2 class="card-item-image-text-title">Мобильные приложения</h2>
+                  <p class="card-item-image-text-title-desc">
+                    Лендинг формируется таким образом, чтобы коротко и
+                    доходчиво изложить суть предложения, вызвать
+                    заинтересованность,убедить клиента в том, что это то чего
+                    он желает.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-item">
+                  <div class="card-image">
+                    <img class="card-item-image" src="img/services-image.svg" alt="" />
+                    <div class="card-item-image-sale">
+                      <p>Хит продаж</p>
+                    </div>
+                  </div>
+                  <p class="card-item-image-text">Одностраничный сайт</p>
+                  <h2 class="card-item-image-text-title">Создание Telegram ботов</h2>
+                  <p class="card-item-image-text-title-desc">
+                    Лендинг формируется таким образом, чтобы коротко и
+                    доходчиво изложить суть предложения, вызвать
+                    заинтересованность,убедить клиента в том, что это то чего
+                    он желает.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-item">
+                  <div class="card-image">
+                    <img class="card-item-image" src="img/services-image.svg" alt="" />
+                    <div class="card-item-image-sale">
+                      <p>Хит продаж</p>
+                    </div>
+                  </div>
+                  <p class="card-item-image-text">Одностраничный сайт</p>
+                  <h2 class="card-item-image-text-title">Разработка бренда и фирменного стиля</h2>
+                  <p class="card-item-image-text-title-desc">
+                    Лендинг формируется таким образом, чтобы коротко и
+                    доходчиво изложить суть предложения, вызвать
+                    заинтересованность,убедить клиента в том, что это то чего
+                    он желает.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-item">
+                  <div class="card-image">
+                    <img class="card-item-image" src="img/services-image.svg" alt="" />
+                    <div class="card-item-image-sale">
+                      <p>Хит продаж</p>
+                    </div>
+                  </div>
+                  <p class="card-item-image-text">Одностраничный сайт</p>
+                  <h2 class="card-item-image-text-title">Контекстная реклама</h2>
+                  <p class="card-item-image-text-title-desc">
+                    Лендинг формируется таким образом, чтобы коротко и
+                    доходчиво изложить суть предложения, вызвать
+                    заинтересованность,убедить клиента в том, что это то чего
+                    он желает.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-item">
+                  <div class="card-image">
+                    <img class="card-item-image" src="img/services-image.svg" alt="" />
+                    <div class="card-item-image-sale">
+                      <p>Хит продаж</p>
+                    </div>
+                  </div>
+                  <p class="card-item-image-text">Одностраничный сайт</p>
+                  <h2 class="card-item-image-text-title">Создание презентаций</h2>
+                  <p class="card-item-image-text-title-desc">
+                    Лендинг формируется таким образом, чтобы коротко и
+                    доходчиво изложить суть предложения, вызвать
+                    заинтересованность,убедить клиента в том, что это то чего
+                    он желает.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-item">
+                  <div class="card-image">
+                    <img class="card-item-image" src="img/services-image.svg" alt="" />
+                    <div class="card-item-image-sale">
+                      <p>Хит продаж</p>
+                    </div>
+                  </div>
+                  <p class="card-item-image-text">Одностраничный сайт</p>
+                  <h2 class="card-item-image-text-title">Графический дизайн</h2>
+                  <p class="card-item-image-text-title-desc">
+                    Лендинг формируется таким образом, чтобы коротко и
+                    доходчиво изложить суть предложения, вызвать
+                    заинтересованность,убедить клиента в том, что это то чего
+                    он желает.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-item">
+                  <div class="card-image">
+                    <img class="card-item-image" src="img/services-image.svg" alt="" />
+                    <div class="card-item-image-sale">
+                      <p>Хит продаж</p>
+                    </div>
+                  </div>
+                  <p class="card-item-image-text">Одностраничный сайт</p>
+                  <h2 class="card-item-image-text-title">Подготовка стартапов</h2>
+                  <p class="card-item-image-text-title-desc">
+                    Лендинг формируется таким образом, чтобы коротко и
+                    доходчиво изложить суть предложения, вызвать
+                    заинтересованность,убедить клиента в том, что это то чего
+                    он желает.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <img src="img/right-arrow.svg" alt="" />
+          </div>
+          <div class="swiper-button-prev">
+            <img src="img/left-arrow.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="case" id="case">
+      <div class="container">
+        <div class="case-title">
+          <h2 class="case-title-h2">
+            Опыт <br />
+            реализации
+          </h2>
+          <p class="case-title-h2-p">
+            Высоконагруженные сервисы, <br />
+            облачные решения, маркетплейсы
+          </p>
+        </div>
+        <div class="case-stripes">
+          <img src="img/stripes.svg" alt="" />
+          <img src="img/case.svg" alt="" />
+        </div>
+
+   
+
+
+          <div class="tab">
+            <button class="tablinks active" onclick="openCity(event, 'London')"><h1>Корпоративные сайты</h1></button>
+              <button class="tablinks" onclick="openCity(event, 'Paris')"><h1>Landing page</h1></button>
+              <button class="tablinks" onclick="openCity(event, 'Tokyo')"><h1>Интернет магазины</h1></button>
+              <button class="tablinks" onclick="openCity(event, 'Moscow')"><h1>Порталы и системы</h1></button>
+              <button class="tablinks" onclick="openCity(event, 'Riga')"><h1>Мобильные приложения</h1></button>
+              <button class="tablinks" onclick="openCity(event, 'Washington')"><h1>Логотипы и бренды</h1></button>
+          </div>
+          
+          <!-- Tab content -->  
+          <div class="tab-content">
+            <div id="London" class="tabcontent">
+              <div class="swiper-container mySwiper5">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/case-images.svg" alt="">
+                  </div>
+  
+                  <div class="swiper-slide">
+                    <img src="img/case-images.svg" alt="">
+                  </div>
+  
+                  <div class="swiper-slide">
+                    <img src="img/case-images.svg" alt="">
+                  </div>
+  
+                  <div class="swiper-slide">
+                    <img src="img/case-images.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content">
+            <div id="Paris" class="tabcontent">
+              <div class="swiper-container mySwiper6">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/case-images.svg" alt="">
+                  </div>
+  
+                  <div class="swiper-slide">
+                    <img src="img/case-images.svg" alt="">
+                  </div>
+  
+                  <div class="swiper-slide">
+                    <img src="img/case-images.svg" alt="">
+                  </div>
+  
+                  <div class="swiper-slide">
+                    <img src="img/case-images.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+    </section>
+  <section class="team" id="team">
+    <div class="container">
+      <div class="team-title">
+        <h2 class="team-title-h2">
+          Наши <br />
+          команда
+        </h2>
+        <p class="team-title-h2-p">
+          Мы — команда опытных <br />
+          специалистов с горящими глазами.
+        </p>
+      </div>
+      <div class="team-stripes">
+        <img src="img/stripes.svg" alt="" />
+        <img src="img/team-image.svg" alt="" />
+      </div>
+      <div class="swiper-container mySwiper3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="team-name">
+              <img class="team-name-image" src="img/team_1.svg" alt="" />
+              <h2 class="team-name-image-h2">
+                Азиза<br />
+                Нурмухамедова
+              </h2>
+              <p class="team-name-image-h2-p">Менеджер по проектам</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team-name">
+              <img class="team-name-image" src="img/team_2.svg" alt="" />
+              <h2 class="team-name-image-h2">
+                Дмитрий  <br />
+                Мухаммадиев
+              </h2>
+              <p class="team-name-image-h2-p">Frontend / Mobile Developer</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team-name">
+              <img class="team-name-image" src="img/team_3.svg" alt="" />
+              <h2 class="team-name-image-h2">
+                Шамсиддин <br />
+                Каримов
+              </h2>
+              <p class="team-name-image-h2-p">Креативный директор</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-name">
+              <img class="team-name-image" src="img/team_4.svg" alt="" />
+              <h2 class="team-name-image-h2">
+                Шамсиддин <br />
+                Каримов
+              </h2>
+              <p class="team-name-image-h2-p">Креативный директор</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-name">
+              <img class="team-name-image" src="img/team_5.svg" alt="" />
+              <h2 class="team-name-image-h2">
+                Бекмурод  <br />
+                Джурабоев
+              </h2>
+              <p class="team-name-image-h2-p">Mobile Developer</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team-name">
+              <img class="team-name-image" src="img/team_6.svg" alt="" />
+              <h2 class="team-name-image-h2">
+                Шамсиддин <br />
+                Каримов
+              </h2>
+              <p class="team-name-image-h2-p">Креативный директор</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team-name">
+              <img class="team-name-image" src="img/team_7.svg" alt="" />
+              <h2 class="team-name-image-h2">
+                Шамсиддин <br />
+                Кабилханов 
+              </h2>
+              <p class="team-name-image-h2-p">Фронт-энд разработчик</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team-name">
+              <img class="team-name-image" src="img/team_8.svg" alt="" />
+              <h2 class="team-name-image-h2">
+                Отабек <br />
+                Камолиддинов 
+              </h2>
+              <p class="team-name-image-h2-p">Контент - менеджер</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <img src="img/right-arrow.svg" alt="" />
+        </div>
+        <div class="swiper-button-prev">
+          <img src="img/left-arrow.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="partners" id="partners">
+    <div class="container">
+      <div class="partners-title">
+        <h2 class="partners-title-h2">Те кто нам <br />доверяют</h2>
+        <p class="partners-title-h2-p">
+          Мы работаем с крупнейшими и <br />
+          международными компаниями
+        </p>
+      </div>
+      <div class="partners-stripes">
+        <img src="img/stripes.svg" alt="" />
+        <img src="img/partners.svg" alt="" />
+      </div>
+      <div class="swiper-container mySwiper4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-container mySwiper4 ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"> <img class="zoom" src="img/partners-image.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="contacts-title">
+        <h2 class="contacts-title-h2">
+          Давайте <br />
+          сделаем это
+        </h2>
+        <p class="contacts-title-h2-p">
+          Качественная визуальная коммуникация <br />
+          брендов: от логотипов до промосайтов.
+        </p>
+      </div>
+      <div class="contacts-stripes">
+        <img src="img/stripes.svg" alt="" />
+        <img src="img/Contacts-image.svg" alt="" />
+      </div>
+      <div class="contacts-flex">
+        <div class="contacts-social">
+          <img class="contacts-social-logo" src="img/logo.svg" alt="" />
+          <img class="contacts-social-logo-stripes" src="img/stripes.svg" alt="" />
+          <p class="contacts-social-logo-stripes-secury">
+            OOO "QWERTY" © 2011-2021. <br />
+            Все права защищены.
+          </p>
+          <div class="contacts-icons">
+            <a href="#"><img src="img/facebook.svg" alt="" /></a>
+            <a href="#"><img src="img/twitter.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="contacts-social">
+          <h2 class="contacts-social-title">Контакты</h2>
+          <a class="contacts-social-title-a" href="#">+ 99898 188 8950</a>
+          <a class="contacts-social-title-a" href="#">+ 99899 888 8950 (Telegram)</a>
+          <a class="contacts-social-title-a" href="#">+ 99893 531 0224</a>
+          <p class="contacts-social-title-a-text">Головной офис</p>
+          <p class="contacts-social-title-a-text-address">
+            ул.Абдуллы Каххара, 23 <br />
+            (ориентир: Челси паб, Felicita)
+          </p>
+        </div>
+        <div class="contacts-social">
+          <h2 class="contacts-social-h2">E-mail</h2>
+          <p class="contacts-social-h2-p">info@qwerty.uz</p>
+          <h3 class="contacts-social-h2-p-h3">Посмотреть на карте</h3>
+          <div class="contacts-social-location">
+            <a href="#"><img src="img/location.svg" alt="" /></a>
+            </img>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contacts-background">
+      <img class="contacts-social-logo-bg" src="img/logo.svg" alt="" />
+      <p class="contacts-social-logo-stripes-secury-bg">
+        OOO "QWERTY" © 2015-2021. <br />
+        Все права защищены.
+      </p>
+      <div class="contacts-icons-bg">
+        <a href="#"><img src="img/facebook.svg" alt="" /></a>
+        <a href="#"><img src="img/twitter.svg" alt="" /></a>
+      </div>
+    </div>
+  </div>
+  </section>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script/jquery.scrollspy.js"></script>
+  <script src="./script/main.js"></script>
+  <script src="script/swiper-1.js"></script>
+  <script src="script/swiper-2.js"></script>
+  <script src="script/swiper-3.js"></script>
+  <script src="script/swiper-4.js"></script>
+  <script src="script/scrollspy.js"></script>
+</body>
+
+</html>

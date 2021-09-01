@@ -1,0 +1,145 @@
+.partners {
+  padding: 47px 0 201px 0;
+  &-title {
+    display: flex;
+    align-items: center;
+    &-h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 40px;
+      color: #ffffff;
+      &-p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 23px;
+        padding-left: 100px;
+        color: #ffffff;
+      }
+    }
+  }
+  &-stripes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+}
+
+.mySwiper4 {
+  .swiper-slide > a > img {
+    width: 83%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .partners .swiper-slide img {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .partners .swiper-slide img {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 789px) {
+  .partners .partners-title-h2-p {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 23px;
+    padding-left: 60px;
+    color: #ffffff;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .services-title {
+    padding-top: 50px;
+  }
+  .partners .partners-stripes img:last-child {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .partners {
+    padding: 0;
+  }
+  .partners-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .partners .partners-title-h2 {
+    font-size: 22px;
+    line-height: 23px;
+  }
+  .partners .partners-title-h2-p {
+    font-size: 10px;
+    line-height: 13px;
+    padding: 10px 20px;
+  }
+  .partners-stripes {
+    padding: 10px;
+  }
+  .partners-stripes img:first-child {
+    width: 40px;
+  }
+  .partners-stripes img:last-child {
+    width: 80px;
+  }
+}
+
+.zoom {
+  transition: transform 0.2s; /* Animation */
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  padding-bottom: 47px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+
+/* Create an active/current tablink class */
+.case .tab button.active {
+  background: linear-gradient(270deg, #272765 0%, #0d0d4b 100%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.tabcontent img {
+  width: 100%;
+}
+
+.tablinks h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #6cc4dd;
+}

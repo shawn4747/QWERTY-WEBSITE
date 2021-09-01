@@ -1,0 +1,231 @@
+.services {
+  padding: 65px 0 87px 0;
+  &-title {
+    display: flex;
+    align-items: center;
+    font-family: "Gotham Pro";
+    font-weight: bold;
+    &-name {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 40px;
+      color: #fff;
+      &-desc {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 23px;
+        color: #ffffff;
+        padding-left: 137px;
+      }
+    }
+  }
+  &-stripes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 18px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card {
+  padding: 12px 12px 34px 12px;
+
+  &-item {
+    position: relative;
+    padding: 12px 12px 34px 12px;
+    cursor: pointer;
+    border-radius: 20px;
+
+    background: linear-gradient(
+      180deg,
+      #202246 -53.38%,
+      rgba(40, 43, 87, 0.2) 100%
+    );
+    &-image {
+      width: 100%;
+      &-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        color: #6cc4dd;
+        padding: 16px 0 12px 0;
+        border-bottom: 2px solid;
+        border-image-source: linear-gradient(0deg, #292b56, #292b56),
+          linear-gradient(
+            90deg,
+            #813468 0%,
+            #796892 35.42%,
+            #796892 35.43%,
+            #719ebe 72.91%,
+            #719ebe 72.92%,
+            #6bc6de 100%
+          );
+        &-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 150%;
+          color: rgba(255, 255, 255, 0.8);
+          padding: 12px 0 12px 0;
+          &-desc {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 150%;
+            color: rgba(255, 255, 255, 0.4);
+          }
+        }
+      }
+    }
+  }
+}
+
+.popular {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-item-image-sale {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #ffffff;
+    padding: 6px 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+  }
+}
+.services .swiper-button-next:after,
+.services .swiper-button-prev:after {
+  display: none;
+}
+.services .swiper-button-next,
+.services .swiper-container-rtl .swiper-button-prev {
+  position: absolute;
+  top: 500px;
+  right: 15px;
+  left: auto;
+}
+.services .swiper-button-prev,
+.services .swiper-container-rtl .swiper-button-next {
+  position: absolute;
+  top: 500px;
+  left: 15px;
+  right: auto;
+}
+.mySwiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 100px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .services {
+    padding: 0;
+  }
+  .services .swiper-slide img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 789px) {
+  .services .services-title-name-desc {
+    font-size: 17px;
+  }
+  .services .services-title-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .services-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .services .services-title-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+    color: #fff;
+  }
+  br {
+    display: none;
+  }
+  .services .services-title-name-desc {
+    font-size: 10px;
+    line-height: 15px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 1250px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .services-title {
+    padding-top: 50px;
+  }
+  .services .services-stripes img:last-child {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .services .mySwiper .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+}

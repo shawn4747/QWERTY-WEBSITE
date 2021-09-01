@@ -1,0 +1,220 @@
+.contacts {
+  padding: 47px 0 127px 0;
+  &__arrow {
+    &:after {
+      content: "";
+      transform: rotate(45deg);
+    }
+  }
+  &-title {
+    display: flex;
+    align-items: center;
+    &-h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 40px;
+      color: #ffffff;
+      &-p {
+        padding-left: 75px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 23px;
+        color: #ffffff;
+      }
+    }
+  }
+  &-stripes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contacts-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contacts-social {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &-logo {
+      &-stripes {
+        padding-top: 25px;
+        &-secury {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 19px;
+          color: #ffffff;
+          padding-top: 22px;
+        }
+      }
+    }
+  }
+}
+.contacts-icons {
+  padding-top: 70px;
+  img {
+    padding-right: 20px;
+  }
+}
+
+.contacts-social {
+  &-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 23px;
+    color: #ffffff;
+    padding-bottom: 10px;
+    &-a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      color: #ffffff;
+      text-decoration: none;
+      padding-top: 5px;
+      &-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 23px;
+        color: #ffffff;
+        padding-top: 44px;
+        &-address {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 28px;
+          color: #ffffff;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  &-h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 23px;
+    color: #ffffff;
+    &-p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      color: #ffffff;
+      padding: 12px 0 100px 0;
+      &-h3 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 23px;
+        color: #ffffff;
+        padding-bottom: 25px;
+      }
+    }
+  }
+  &-location {
+    display: flex;
+    align-items: center;
+    img {
+    }
+    .arrow:hover {
+      transform: translateX(20px);
+    }
+  }
+}
+.contacts-background {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts .contacts-flex {
+    display: flex;
+    padding: 0;
+  }
+  .contacts-social-h2-p {
+    padding-bottom: 40px;
+  }
+  .contacts .contacts-social {
+    padding-top: 50px;
+  }
+  .contacts {
+    padding: 10px 5px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts .contacts-flex {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .contacts-social-h2-p {
+    padding-bottom: 40px;
+  }
+  .contacts .contacts-social {
+    padding-top: 50px;
+  }
+  .contacts {
+    padding: 10px 5px;
+  }
+  // .swiper-slide img {
+  //   width: 200px;
+  // }
+  .contacts .contacts-social-logo-stripes {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 789px) {
+  .contacts .contacts-title-h2-p {
+    padding-left: 70px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contacts-stripes img:first-child {
+    width: 40px;
+  }
+  .contacts-stripes img:last-child {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contacts-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts {
+    padding: 0;
+  }
+  .contacts-title-h2 {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .contacts .contacts-title-h2-p {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .contacts-stripes {
+    padding: 10px;
+  }
+  .contacts-stripes img:first-child {
+    width: 40px;
+  }
+  .contacts-stripes img:last-child {
+    width: 80px;
+  }
+  .contacts-icons {
+    padding-top: 20px;
+  }
+}
